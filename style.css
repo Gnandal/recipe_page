@@ -17,17 +17,22 @@ body {
   font-size: 16px;
   font-family: 'Young Serif', serif;
   line-height: 1.8;
-  color: var(--wenge-brown);
   background-color: var(--eggshell);
 }
 
 main {
   background-color: var(--white);
 }
-
+section>div {
+  color: var(--wenge-brown);
+}
 section {
   padding: 2rem;
   object-fit: cover;
+}
+
+img {
+  width: 100%
 }
 
 h2 {

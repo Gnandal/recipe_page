@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+:root {
+  --primary-color:hsl(14, 45%, 36%);
+  --dark-rasbery:hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  font-family: 'Young Serif', serif;
+  line-height: 1.8;
+  color: var(--wenge-brown);
+  background-color: var(--eggshell);
+}
+
+main {
+  background-color: var(--white);
+}
+
+section {
+  padding: 2rem;
+  object-fit: cover;
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+h3 {
+  color: var(--dark-rasbery);
+}
+
+#preparation_time_section {
+  background-color: var(--rose-white);
+  padding: 2rem;
+  border-radius: 1rem;
+  color: var(--dark-charcoal);
+}
+
+hr {
+  color: var(--wenge-brown);
+}
+
+
+ol li::marker {
+  color: var(--primary-color);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bordered td {
+  border-bottom: 1px solid var(--wenge-brown);
+  border-collapse: collapse;
+}
+
+tr>td:first-child {
+  padding-left: 2rem;
+}
+
+img#desktop {
+  display: none;
+}
+
+
+@media screen and (min-width: 600px) {
+  main {
+    width: 600px;
+    margin: auto;
+    border-radius: 2rem;
+  }
+
+  img#desktop {
+    display: block;
+    border-radius: 1rem;
+  }
+
+  img#mobile {
+    display: none;
+  }
+
+  body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
